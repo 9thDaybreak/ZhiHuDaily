@@ -14,6 +14,7 @@
 		BC68A3021D61BA9C00134CA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC68A3001D61BA9C00134CA2 /* Main.storyboard */; };
 		BC68A3041D61BA9C00134CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC68A3031D61BA9C00134CA2 /* Assets.xcassets */; };
 		BC68A3071D61BA9C00134CA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC68A3051D61BA9C00134CA2 /* LaunchScreen.storyboard */; };
+		BC68A3151D61BC2200134CA2 /* GNDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BC68A3141D61BC2200134CA2 /* GNDataUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		BC68A3031D61BA9C00134CA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC68A3061D61BA9C00134CA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC68A3081D61BA9C00134CA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC68A3131D61BC2200134CA2 /* GNDataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNDataUtils.h; sourceTree = "<group>"; };
+		BC68A3141D61BC2200134CA2 /* GNDataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNDataUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +85,13 @@
 		BC68A2F61D61BA9C00134CA2 /* ZhiHuDaily */ = {
 			isa = PBXGroup;
 			children = (
-				BC68A2FA1D61BA9C00134CA2 /* AppDelegate.h */,
-				BC68A2FB1D61BA9C00134CA2 /* AppDelegate.m */,
 				BC68A2FD1D61BA9C00134CA2 /* ViewController.h */,
 				BC68A2FE1D61BA9C00134CA2 /* ViewController.m */,
 				BC68A3001D61BA9C00134CA2 /* Main.storyboard */,
 				BC68A3031D61BA9C00134CA2 /* Assets.xcassets */,
 				BC68A3051D61BA9C00134CA2 /* LaunchScreen.storyboard */,
-				BC68A3081D61BA9C00134CA2 /* Info.plist */,
+				BC68A3121D61BBCE00134CA2 /* 数据工具 */,
+				BC68A3111D61BBA800134CA2 /* 其他 */,
 				BC68A2F71D61BA9C00134CA2 /* Supporting Files */,
 			);
 			path = ZhiHuDaily;
@@ -101,6 +103,25 @@
 				BC68A2F81D61BA9C00134CA2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC68A3111D61BBA800134CA2 /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				BC68A2FA1D61BA9C00134CA2 /* AppDelegate.h */,
+				BC68A2FB1D61BA9C00134CA2 /* AppDelegate.m */,
+				BC68A3081D61BA9C00134CA2 /* Info.plist */,
+			);
+			name = "其他";
+			sourceTree = "<group>";
+		};
+		BC68A3121D61BBCE00134CA2 /* 数据工具 */ = {
+			isa = PBXGroup;
+			children = (
+				BC68A3131D61BC2200134CA2 /* GNDataUtils.h */,
+				BC68A3141D61BC2200134CA2 /* GNDataUtils.m */,
+			);
+			name = "数据工具";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC68A3151D61BC2200134CA2 /* GNDataUtils.m in Sources */,
 				BC68A2FF1D61BA9C00134CA2 /* ViewController.m in Sources */,
 				BC68A2FC1D61BA9C00134CA2 /* AppDelegate.m in Sources */,
 				BC68A2F91D61BA9C00134CA2 /* main.m in Sources */,
