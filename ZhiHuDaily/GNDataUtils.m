@@ -10,16 +10,17 @@
 
 @implementation GNDataUtils
 
-+(NSString *)todayDateString {
++ (NSString *)todayDateString {
     NSDate *today = [NSDate date];
+    //更改日期显示格式
     NSDateFormatter *formatter = [NSDateFormatter new];
     [formatter setDateFormat:@"yyyyMMdd"];
-    
     //返回现在时间的字符串
     return [formatter stringFromDate:today];
 }
 
-+(NSString *)dateStringBeforeDays:(NSInteger)days {
++ (NSString *)dateStringBeforeDays:(NSInteger)days {
+    //更改格式
     NSDateFormatter *formatter = [NSDateFormatter new];
     [formatter setDateFormat:@"yyyyMMdd"];
     //获取到 days 天前的date
