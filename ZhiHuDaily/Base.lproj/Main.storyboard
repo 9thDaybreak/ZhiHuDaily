@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-224" y="230"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="MML-qi-Law">
             <objects>
-                <viewController id="k1T-Pm-5il" sceneMemberID="viewController">
+                <viewController id="k1T-Pm-5il" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uFi-kz-9xk"/>
                         <viewControllerLayoutGuide type="bottom" id="Bvy-Oq-tJb"/>
@@ -62,16 +62,6 @@
                                             <constraint firstAttribute="height" constant="20" id="f5N-gd-e3W"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F48-MM-lRe" userLabel="Show Side Menu Button">
-                                        <rect key="frame" x="20" y="30" width="19" height="22"/>
-                                        <state key="normal" image="side_menu"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgc-5j-jXs" userLabel="Today Title Label">
-                                        <rect key="frame" x="126" y="30" width="68" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2g-ov-uf8" userLabel="Carousel View">
                                         <rect key="frame" x="-4" y="0.0" width="328" height="220"/>
                                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.45763771767422767" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,6 +69,26 @@
                                             <constraint firstAttribute="height" constant="220" id="M7h-eq-BDy"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F48-MM-lRe" userLabel="Show Side Menu Button">
+                                        <rect key="frame" x="20" y="30" width="19" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="DvC-Ny-hfW"/>
+                                            <constraint firstAttribute="height" constant="22" id="b7r-mo-p9g"/>
+                                        </constraints>
+                                        <state key="normal" image="side_menu"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DvC-Ny-hfW"/>
+                                                <exclude reference="b7r-mo-p9g"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgc-5j-jXs" userLabel="Today Title Label">
+                                        <rect key="frame" x="126" y="30" width="68" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -111,10 +121,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="Up2-yX-MoG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="homeView" destination="9DQ-4J-4xo" id="XMA-7e-7xB"/>
+                        <outlet property="tableView" destination="4yb-9I-Vng" id="Vf6-vb-JSm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOq-XL-ko1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="230"/>
+            <point key="canvasLocation" x="188" y="230"/>
         </scene>
     </scenes>
     <resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hdJ-NE-I2R" customClass="GNSideMenuCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hdJ-NE-I2R" id="ABr-34-cPX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCQ-1N-Lgw">
+                        <rect key="frame" x="8" y="13" width="246" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.58039215690000001" green="0.59607843140000005" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_cell_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-2t-whU">
+                        <rect key="frame" x="262" y="13" width="15" height="18"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.14117647059999999" green="0.16862745100000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="CV6-2t-whU" firstAttribute="centerY" secondItem="ABr-34-cPX" secondAttribute="centerY" id="FQe-77-KRJ"/>
+                    <constraint firstItem="pCQ-1N-Lgw" firstAttribute="leading" secondItem="ABr-34-cPX" secondAttribute="leadingMargin" id="bd4-Hk-9Y9"/>
+                    <constraint firstItem="CV6-2t-whU" firstAttribute="trailing" secondItem="ABr-34-cPX" secondAttribute="trailingMargin" constant="-35" id="d3w-m1-EBF"/>
+                    <constraint firstItem="CV6-2t-whU" firstAttribute="leading" secondItem="pCQ-1N-Lgw" secondAttribute="trailing" constant="8" id="ezG-AV-QXC"/>
+                    <constraint firstItem="pCQ-1N-Lgw" firstAttribute="centerY" secondItem="ABr-34-cPX" secondAttribute="centerY" id="y7B-mi-Tct"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="menuTitle" destination="pCQ-1N-Lgw" id="G3P-ai-gAW"/>
+            </connections>
+            <point key="canvasLocation" x="375" y="272"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="menu_cell_arrow" width="15" height="18"/>
+    </resources>
+</document>

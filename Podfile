@@ -7,6 +7,7 @@ target 'ZhiHuDaily' do
 pod 'AFNetworking'
 pod 'Reveal'
 pod 'Masonry'
+pod 'ViewUtils'
   # Pods for ZhiHuDaily
 
 end

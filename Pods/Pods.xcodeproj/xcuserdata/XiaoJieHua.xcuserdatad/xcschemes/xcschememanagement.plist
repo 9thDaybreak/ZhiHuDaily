@@ -24,10 +24,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ViewUtils.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>36CD6735E32F35E4EE37EDDF03F4E08F</key>
+		<key>08694E05AC4E2A2384CC05784B08FB25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F17E3E627A7ADB219F8B9378F6F64B92</key>
+		<key>B97ACE5E6C7BA2C3BEACD0E294B86C8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C11FD818728DF7F041D2C6217619EC16</key>
 		<dict>
 			<key>primary</key>
 			<true/>

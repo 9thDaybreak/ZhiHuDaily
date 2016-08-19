@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rpc-05-RdF" customClass="GNCarouselView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kQ-aZ-dSd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0wX-5Q-WRU">
+                    <rect key="frame" x="281" y="183" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8kQ-aZ-dSd" firstAttribute="top" secondItem="Rpc-05-RdF" secondAttribute="top" id="BAC-zL-Fg8"/>
+                <constraint firstAttribute="bottom" secondItem="8kQ-aZ-dSd" secondAttribute="bottom" id="SNx-u7-oP0"/>
+                <constraint firstItem="0wX-5Q-WRU" firstAttribute="centerX" secondItem="Rpc-05-RdF" secondAttribute="centerX" id="UjI-fQ-7oa"/>
+                <constraint firstItem="8kQ-aZ-dSd" firstAttribute="leading" secondItem="Rpc-05-RdF" secondAttribute="leading" id="ZP4-VR-Joe"/>
+                <constraint firstAttribute="bottom" secondItem="0wX-5Q-WRU" secondAttribute="bottom" id="f3s-Hl-FR8"/>
+                <constraint firstAttribute="trailing" secondItem="8kQ-aZ-dSd" secondAttribute="trailing" id="oF5-eY-yt3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="365" y="191"/>
+        </view>
+    </objects>
+</document>
