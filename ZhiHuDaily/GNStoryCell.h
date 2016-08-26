@@ -10,7 +10,8 @@
 
 @interface GNStoryCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *lable;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @property (weak, nonatomic) IBOutlet UIImageView *rightImageView;
 
 @end

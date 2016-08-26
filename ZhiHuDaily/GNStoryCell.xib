@@ -25,7 +25,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWa-gG-0pt">
                         <rect key="frame" x="16" y="15" width="201" height="60"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -39,10 +39,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="label" destination="qWa-gG-0pt" id="q1y-BR-JlG"/>
-                <outlet property="lable" destination="qWa-gG-0pt" id="Hj1-oD-yaS"/>
-                <outlet property="righImageView" destination="jCU-sz-3EH" id="6YB-ke-y7n"/>
-                <outlet property="rightImageView" destination="jCU-sz-3EH" id="6J9-oh-vwg"/>
+                <outlet property="label" destination="qWa-gG-0pt" id="oQn-15-j5P"/>
+                <outlet property="rightImageView" destination="jCU-sz-3EH" id="UPF-Le-1Ro"/>
             </connections>
             <point key="canvasLocation" x="-235" y="223"/>
         </tableViewCell>

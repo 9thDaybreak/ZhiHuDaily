@@ -8,6 +8,7 @@ pod 'AFNetworking'
 pod 'Reveal'
 pod 'Masonry'
 pod 'ViewUtils'
+pod 'SDWebImage'
   # Pods for ZhiHuDaily
 
 end

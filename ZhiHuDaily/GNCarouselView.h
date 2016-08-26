@@ -10,6 +10,8 @@
 
 @interface GNCarouselView : UIView
 
+@property (strong, nonatomic) IBOutlet UIView *view;
+
 - (void)setTopStories:(NSArray *)topStories;
 
 @end

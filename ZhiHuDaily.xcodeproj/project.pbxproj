@@ -20,13 +20,14 @@
 		BC68A3041D61BA9C00134CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC68A3031D61BA9C00134CA2 /* Assets.xcassets */; };
 		BC68A3071D61BA9C00134CA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC68A3051D61BA9C00134CA2 /* LaunchScreen.storyboard */; };
 		BC68A3151D61BC2200134CA2 /* GNDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BC68A3141D61BC2200134CA2 /* GNDataUtils.m */; };
+		BC7B2C6B1D6D9CA500ED7F96 /* GNCarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7B2C6A1D6D9CA500ED7F96 /* GNCarouselView.xib */; };
+		BC8CD9EB1D6B623D00618E6E /* GNRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8CD9EA1D6B623D00618E6E /* GNRefreshView.m */; };
 		BCB645921D645BF300706DDB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB645911D645BF300706DDB /* HomeViewController.m */; };
 		BCF472581D659CF000B17ACB /* GNStory.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF472571D659CF000B17ACB /* GNStory.m */; };
 		BCF4725B1D659DF600B17ACB /* GNTopStory.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF4725A1D659DF600B17ACB /* GNTopStory.m */; };
 		BCF472641D65B66800B17ACB /* GNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF472631D65B66800B17ACB /* GNBannerView.m */; };
 		BCF472661D65B68C00B17ACB /* GNBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF472651D65B68C00B17ACB /* GNBannerView.xib */; };
 		BCF472691D65BF3300B17ACB /* GNCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF472681D65BF3300B17ACB /* GNCarouselView.m */; };
-		BCF4726B1D65BF5700B17ACB /* GNCarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF4726A1D65BF5700B17ACB /* GNCarouselView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,9 @@
 		BC68A3081D61BA9C00134CA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC68A3131D61BC2200134CA2 /* GNDataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNDataUtils.h; sourceTree = "<group>"; };
 		BC68A3141D61BC2200134CA2 /* GNDataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNDataUtils.m; sourceTree = "<group>"; };
+		BC7B2C6A1D6D9CA500ED7F96 /* GNCarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNCarouselView.xib; sourceTree = "<group>"; };
+		BC8CD9E91D6B623D00618E6E /* GNRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNRefreshView.h; sourceTree = "<group>"; };
+		BC8CD9EA1D6B623D00618E6E /* GNRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNRefreshView.m; sourceTree = "<group>"; };
 		BCB645901D645BF300706DDB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		BCB645911D645BF300706DDB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		BCF472561D659CF000B17ACB /* GNStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNStory.h; sourceTree = "<group>"; };
@@ -63,7 +67,6 @@
 		BCF472651D65B68C00B17ACB /* GNBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNBannerView.xib; sourceTree = "<group>"; };
 		BCF472671D65BF3300B17ACB /* GNCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNCarouselView.h; sourceTree = "<group>"; };
 		BCF472681D65BF3300B17ACB /* GNCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNCarouselView.m; sourceTree = "<group>"; };
-		BCF4726A1D65BF5700B17ACB /* GNCarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNCarouselView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 				6AC65C4B5CF5F81E50E6980D /* libPods-ZhiHuDaily.a */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		6AE1366D5DDF8FA68E812F6E /* Pods */ = {
@@ -93,15 +97,13 @@
 				4D1D668AD06A4D89FA8CE809 /* Pods-ZhiHuDaily.release.xcconfig */,
 			);
 			name = Pods;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BC68A2EB1D61BA9B00134CA2 = {
 			isa = PBXGroup;
 			children = (
 				BC68A2F61D61BA9C00134CA2 /* ZhiHuDaily */,
-				BC68A2F51D61BA9C00134CA2 /* Products */,
-				6AE1366D5DDF8FA68E812F6E /* Pods */,
-				14A4A26C80E2A201FFABCF90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +113,7 @@
 				BC68A2F41D61BA9C00134CA2 /* ZhiHuDaily.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BC68A2F61D61BA9C00134CA2 /* ZhiHuDaily */ = {
@@ -124,7 +127,7 @@
 				BC68A3001D61BA9C00134CA2 /* Main.storyboard */,
 				BC68A3031D61BA9C00134CA2 /* Assets.xcassets */,
 				BC68A3051D61BA9C00134CA2 /* LaunchScreen.storyboard */,
-				BC68A2F71D61BA9C00134CA2 /* Supporting Files */,
+				BC68A3081D61BA9C00134CA2 /* Info.plist */,
 			);
 			path = ZhiHuDaily;
 			sourceTree = "<group>";
@@ -140,9 +143,12 @@
 		BC68A3111D61BBA800134CA2 /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
+				BC68A2F51D61BA9C00134CA2 /* Products */,
+				6AE1366D5DDF8FA68E812F6E /* Pods */,
+				14A4A26C80E2A201FFABCF90 /* Frameworks */,
+				BC68A2F71D61BA9C00134CA2 /* Supporting Files */,
 				BC68A2FA1D61BA9C00134CA2 /* AppDelegate.h */,
 				BC68A2FB1D61BA9C00134CA2 /* AppDelegate.m */,
-				BC68A3081D61BA9C00134CA2 /* Info.plist */,
 			);
 			name = "其他";
 			sourceTree = "<group>";
@@ -182,18 +188,20 @@
 		BCF4725C1D659F1500B17ACB /* 视图 */ = {
 			isa = PBXGroup;
 			children = (
-				BC1D9B5B1D66E3A000E90F9D /* GNStoryCell.h */,
-				BC1D9B5C1D66E3A000E90F9D /* GNStoryCell.m */,
-				BC1D9B5D1D66E3A000E90F9D /* GNStoryCell.xib */,
+				BCF472671D65BF3300B17ACB /* GNCarouselView.h */,
+				BCF472681D65BF3300B17ACB /* GNCarouselView.m */,
+				BC7B2C6A1D6D9CA500ED7F96 /* GNCarouselView.xib */,
 				BCF472621D65B66800B17ACB /* GNBannerView.h */,
 				BCF472631D65B66800B17ACB /* GNBannerView.m */,
 				BCF472651D65B68C00B17ACB /* GNBannerView.xib */,
-				BCF472671D65BF3300B17ACB /* GNCarouselView.h */,
-				BCF472681D65BF3300B17ACB /* GNCarouselView.m */,
-				BCF4726A1D65BF5700B17ACB /* GNCarouselView.xib */,
+				BC1D9B5B1D66E3A000E90F9D /* GNStoryCell.h */,
+				BC1D9B5C1D66E3A000E90F9D /* GNStoryCell.m */,
+				BC1D9B5D1D66E3A000E90F9D /* GNStoryCell.xib */,
 				BC1D9B651D6767DC00E90F9D /* GNSideMenuCell.h */,
 				BC1D9B661D6767DC00E90F9D /* GNSideMenuCell.m */,
 				BC1D9B671D6767DC00E90F9D /* GNSideMenuCell.xib */,
+				BC8CD9E91D6B623D00618E6E /* GNRefreshView.h */,
+				BC8CD9EA1D6B623D00618E6E /* GNRefreshView.m */,
 			);
 			name = "视图";
 			sourceTree = "<group>";
@@ -259,13 +267,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC68A3071D61BA9C00134CA2 /* LaunchScreen.storyboard in Resources */,
+				BC7B2C6B1D6D9CA500ED7F96 /* GNCarouselView.xib in Resources */,
 				BCF472661D65B68C00B17ACB /* GNBannerView.xib in Resources */,
 				BC1D9B691D6767DC00E90F9D /* GNSideMenuCell.xib in Resources */,
 				BC1D9B5F1D66E3A000E90F9D /* GNStoryCell.xib in Resources */,
 				BC1D9B641D671C8B00E90F9D /* GNSideMenuViewController.xib in Resources */,
 				BC68A3041D61BA9C00134CA2 /* Assets.xcassets in Resources */,
 				BC68A3021D61BA9C00134CA2 /* Main.storyboard in Resources */,
-				BCF4726B1D65BF5700B17ACB /* GNCarouselView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +337,7 @@
 				BC1D9B681D6767DC00E90F9D /* GNSideMenuCell.m in Sources */,
 				BCF4725B1D659DF600B17ACB /* GNTopStory.m in Sources */,
 				BCF472581D659CF000B17ACB /* GNStory.m in Sources */,
+				BC8CD9EB1D6B623D00618E6E /* GNRefreshView.m in Sources */,
 				BC1D9B631D671C8B00E90F9D /* GNSideMenuViewController.m in Sources */,
 				BC68A2F91D61BA9C00134CA2 /* main.m in Sources */,
 				BCB645921D645BF300706DDB /* HomeViewController.m in Sources */,

@@ -24,7 +24,7 @@ static NSString *const kCellIdentifier = @"Cell";
     [super viewDidLoad];
     
     [self.menuTableView registerNib:[UINib nibWithNibName:@"GNSideMenuCell" bundle:nil] forCellReuseIdentifier:kCellIdentifier];
-    self.menuTableView.delegate = self;
+//    self.menuTableView.delegate = self;
     self.menuTableView.dataSource = self;
     
     self.menuItems = @[

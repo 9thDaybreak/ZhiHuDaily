@@ -28,9 +28,25 @@
         
         self.gradientLayer = [CAGradientLayer layer];
         self.gradientLayer.frame = self.bannerImageView.bounds;
+        self.gradientLayer.colors = @[
+                                      (id)[UIColor colorWithWhite:0.2 alpha:0.6].CGColor,
+                                      (id)[UIColor clearColor].CGColor,
+                                      (id)[UIColor clearColor].CGColor,
+                                      (id)[UIColor colorWithWhite:0.2 alpha:0.6].CGColor
+                                      ];
+        self.gradientLayer.locations = @[@0.0, @0.4, @0.7, @1.0];
+        
+        [self.bannerImageView.layer addSublayer:self.gradientLayer];
     }
-    
     return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    self.gradientLayer.frame = self.bannerImageView.bounds;
+    [CATransaction commit];
 }
 
 @end

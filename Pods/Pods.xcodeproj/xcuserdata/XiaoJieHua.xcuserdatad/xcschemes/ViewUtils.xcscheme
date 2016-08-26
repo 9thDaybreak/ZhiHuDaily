@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C11FD818728DF7F041D2C6217619EC16'
+               BlueprintIdentifier = '6D9E9FF131B05B2E626E0BBA6D55953E'
                BlueprintName = 'ViewUtils'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libViewUtils.a'>
