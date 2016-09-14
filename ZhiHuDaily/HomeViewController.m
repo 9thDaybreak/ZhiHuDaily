@@ -363,12 +363,13 @@ static CGFloat const kSideMenuAnimationDuration = 0.2f;
 
 - (IBAction)showSideMenu:(id)sender {
     [self.sideMenuVC.menuTableView reloadData];
-    self.homeViewLeft.constant = 225;
-    self.homeViewRight.constant = -225;
-    [self.homeView setNeedsUpdateConstraints];
+    
     
     [UIView animateWithDuration:kSideMenuAnimationDuration
                      animations:^{
+                         self.HomeView.left = 225;
+                         self.homeView.right = 545;
+                         [self.homeView setNeedsUpdateConstraints];
                          self.sideMenuVC.view.left = 0;
                          [self.view layoutIfNeeded];
                      }
