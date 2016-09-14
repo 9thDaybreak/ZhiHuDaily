@@ -9,8 +9,9 @@
 #import "GNSideMenuViewController.h"
 #import "GNSideMenuCell.h"
 #import <QuickLook/QuickLook.h>
+#import <QuartzCore/QuartzCore.h>
 
-@interface GNSideMenuViewController () <UITableViewDataSource, UITabBarDelegate, UIScrollViewDelegate>
+@interface GNSideMenuViewController () <UITableViewDataSource, UITabBarDelegate, UIScrollViewDelegate, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *menuItems;
 
@@ -24,8 +25,8 @@ static NSString *const kCellIdentifier = @"Cell";
     [super viewDidLoad];
     
     [self.menuTableView registerNib:[UINib nibWithNibName:@"GNSideMenuCell" bundle:nil] forCellReuseIdentifier:kCellIdentifier];
-//    self.menuTableView.delegate = self;
     self.menuTableView.dataSource = self;
+    self.menuTableView.delegate = self;
     
     self.menuItems = @[
                        @"首页",

@@ -8,7 +8,6 @@
 
 #import "GNCarouselView.h"
 #import "GNTopStory.h"
-#import "GNBannerView.h"
 #import <UIImageView+WebCache.h>
 #import <Masonry.h>
 
@@ -67,12 +66,9 @@
     UIView *lastBannerView = nil;
     
     for (int i = 0; i < topStories.count; i++) {
-        
+        GNBannerView *bannerView = [[GNBannerView alloc] init];
         //导入模型
          GNTopStory *topStory = topStories[i];
-        
-        //初始化轮播图的 View
-        GNBannerView *bannerView = [[GNBannerView alloc] init];
         
         //设置bannerView的图片和标签
         [bannerView.bannerImageView sd_setImageWithURL:[NSURL URLWithString:topStory.imageURLString]];
@@ -80,10 +76,12 @@
         
         //设置图片的 frame
         [self.scrollView addSubview:bannerView];
+        
         [bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.height.equalTo(self.scrollView.mas_height);
             make.width.mas_equalTo(GNScrollViewWidth);
             make.top.equalTo(self.scrollView.mas_top);
+            
             
             if (lastBannerView) {
                 make.left.equalTo(lastBannerView.mas_right);
@@ -91,6 +89,7 @@
                 make.left.equalTo(self.scrollView.mas_left);
             }
         }];
+        
         lastBannerView = bannerView;
 //        bannerView.frame = CGRectMake(i * GNScrollViewWidth, 0, GNScrollViewWidth, GNScrollViewHeight);
         //将图片添加进 scrollView

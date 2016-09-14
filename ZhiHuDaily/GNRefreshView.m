@@ -32,31 +32,38 @@
 }
 
 - (void)customInit {
-    self.indicatorView = [[UIActivityIndicatorView alloc] initWithFrame:self.bounds];
     
+    //初始化
+    self.indicatorView = [[UIActivityIndicatorView alloc] initWithFrame:self.bounds];
     self.grayCircleShapeLayer = [CAShapeLayer layer];
+    self.whiteCircleShapeLayer = [CAShapeLayer layer];
+    
     //线宽
     self.grayCircleShapeLayer.lineWidth = 2.f;
-    //笔画颜色
+    self.whiteCircleShapeLayer.lineWidth = 2.f;
+    
+    //边框颜色
     self.grayCircleShapeLayer.strokeColor = [UIColor grayColor].CGColor;
-    //填充颜色
+    self.whiteCircleShapeLayer.strokeColor = [UIColor whiteColor].CGColor;
+    
+    //清空填充颜色
     self.grayCircleShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    self.whiteCircleShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    
     //不透明度
     self.grayCircleShapeLayer.opacity = 0;
-    //路径，贝塞尔曲线：贝塞尔路径椭圆矩形
-    self.grayCircleShapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:self.bounds].CGPath;
-    
-    self.whiteCircleShapeLayer = [CAShapeLayer layer];
-    self.whiteCircleShapeLayer.lineWidth = 2.f;
-    self.whiteCircleShapeLayer.strokeColor = [UIColor whiteColor].CGColor;
-    self.whiteCircleShapeLayer.fillColor = [UIColor clearColor].CGColor;
     self.whiteCircleShapeLayer.opacity = 0;
+    
+    //路径，贝塞尔曲线：贝塞尔路径椭圆矩形，有两种画圆的方法
+    self.grayCircleShapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:self.bounds].CGPath;
+    //指定起始角
     self.whiteCircleShapeLayer.path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.width / 2, self.width / 2) radius:self.width / 2 startAngle:M_PI_2 endAngle:M_PI * 5 / 2 clockwise:YES].CGPath;
     self.whiteCircleShapeLayer.strokeEnd = 0;
 
     [self addSubview:self.indicatorView];
     [self.layer addSublayer:self.grayCircleShapeLayer];
     [self.layer addSublayer:self.whiteCircleShapeLayer];
+    
 }
 
 - (void)updateProgress:(CGFloat)progress {
@@ -72,6 +79,7 @@
     if (progress > 1) {
         progress = 1;
     }
+    
     self.whiteCircleShapeLayer.strokeEnd = progress;
 }
 

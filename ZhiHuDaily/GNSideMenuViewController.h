@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GNSideMenuViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 
 @end

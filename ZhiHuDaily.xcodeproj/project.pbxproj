@@ -43,6 +43,7 @@
 		BC1D9B651D6767DC00E90F9D /* GNSideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSideMenuCell.h; sourceTree = "<group>"; };
 		BC1D9B661D6767DC00E90F9D /* GNSideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSideMenuCell.m; sourceTree = "<group>"; };
 		BC1D9B671D6767DC00E90F9D /* GNSideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNSideMenuCell.xib; sourceTree = "<group>"; };
+		BC215BB71D79259A000CD0B1 /* GN-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GN-Prefix.pch"; sourceTree = "<group>"; };
 		BC68A2F41D61BA9C00134CA2 /* ZhiHuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiHuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC68A2F81D61BA9C00134CA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC68A2FA1D61BA9C00134CA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				BC68A3121D61BBCE00134CA2 /* 数据工具 */,
 				BC68A3111D61BBA800134CA2 /* 其他 */,
 				BC68A3001D61BA9C00134CA2 /* Main.storyboard */,
+				BC215BB71D79259A000CD0B1 /* GN-Prefix.pch */,
 				BC68A3031D61BA9C00134CA2 /* Assets.xcassets */,
 				BC68A3051D61BA9C00134CA2 /* LaunchScreen.storyboard */,
 				BC68A3081D61BA9C00134CA2 /* Info.plist */,
@@ -235,7 +237,7 @@
 		BC68A2EC1D61BA9B00134CA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = ZhuSunGongZuoShi;
 				TargetAttributes = {
 					BC68A2F31D61BA9C00134CA2 = {
@@ -383,8 +385,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -428,8 +432,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GNSideMenuViewController">
             <connections>
                 <outlet property="menuTableView" destination="anz-TB-HUI" id="2wd-AN-IoL"/>
+                <outlet property="view" destination="FtP-ma-Ejl" id="IeQ-uW-wHc"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -103,10 +104,6 @@
                         <constraint firstItem="L5P-9t-RgP" firstAttribute="leading" secondItem="tee-tL-1Tf" secondAttribute="leading" constant="12" id="J5C-gL-OSD"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="anz-TB-HUI" userLabel="Menu Table View">
-                    <rect key="frame" x="0.0" y="125" width="225" height="425"/>
-                    <color key="backgroundColor" red="0.14117647058823529" green="0.16862745098039217" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
-                </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmM-9X-baI">
                     <rect key="frame" x="0.0" y="550" width="225" height="50"/>
                     <subviews>
@@ -134,6 +131,10 @@
                         <constraint firstItem="AJU-1T-o9x" firstAttribute="centerY" secondItem="nmM-9X-baI" secondAttribute="centerY" id="Ugk-cq-Pg1"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="anz-TB-HUI" userLabel="Menu Table View">
+                    <rect key="frame" x="0.0" y="125" width="225" height="425"/>
+                    <color key="backgroundColor" red="0.14117647058823529" green="0.16862745098039217" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.14117647058823529" green="0.16862745098039217" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>

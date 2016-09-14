@@ -7,37 +7,38 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GNCarouselView">
             <connections>
-                <outlet property="pageControl" destination="hFj-MW-ZmZ" id="B8p-09-xJG"/>
-                <outlet property="scrollView" destination="Wsg-gE-ZMf" id="THO-Fz-91D"/>
-                <outlet property="view" destination="pmS-7H-MIj" id="Sdh-gq-ffb"/>
+                <outlet property="pageControl" destination="eEL-Rw-J2C" id="uAv-ax-XR5"/>
+                <outlet property="scrollView" destination="Fg4-vc-GmG" id="brv-rf-Q6E"/>
+                <outlet property="view" destination="GjW-JJ-Bs8" id="R7n-ez-pti"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="pmS-7H-MIj">
+        <view contentMode="scaleToFill" id="GjW-JJ-Bs8">
             <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wsg-gE-ZMf">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg4-vc-GmG">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
                     <connections>
-                        <outlet property="delegate" destination="-1" id="Wnf-za-ZLd"/>
+                        <outlet property="delegate" destination="-1" id="FIf-BC-xUi"/>
                     </connections>
                 </scrollView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-MW-ZmZ">
-                    <rect key="frame" x="280" y="183" width="39" height="37"/>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eEL-Rw-J2C">
+                    <rect key="frame" x="281" y="183" width="39" height="37"/>
                 </pageControl>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="Wsg-gE-ZMf" firstAttribute="top" secondItem="pmS-7H-MIj" secondAttribute="top" id="0CC-Tk-uvw"/>
-                <constraint firstAttribute="trailing" secondItem="Wsg-gE-ZMf" secondAttribute="trailing" id="AHo-5A-zwU"/>
-                <constraint firstAttribute="bottom" secondItem="hFj-MW-ZmZ" secondAttribute="bottom" id="JIz-hH-XAv"/>
-                <constraint firstItem="Wsg-gE-ZMf" firstAttribute="leading" secondItem="pmS-7H-MIj" secondAttribute="leading" id="Y3s-XS-bRi"/>
-                <constraint firstAttribute="bottom" secondItem="Wsg-gE-ZMf" secondAttribute="bottom" id="qie-E2-cpF"/>
-                <constraint firstItem="hFj-MW-ZmZ" firstAttribute="centerX" secondItem="pmS-7H-MIj" secondAttribute="centerX" id="uzU-6V-ZaO"/>
+                <constraint firstAttribute="bottom" secondItem="eEL-Rw-J2C" secondAttribute="bottom" id="1LQ-tW-iRE"/>
+                <constraint firstItem="Fg4-vc-GmG" firstAttribute="leading" secondItem="GjW-JJ-Bs8" secondAttribute="leading" id="9Ue-UZ-j4K"/>
+                <constraint firstItem="Fg4-vc-GmG" firstAttribute="top" secondItem="GjW-JJ-Bs8" secondAttribute="top" id="Do0-Ec-BEq"/>
+                <constraint firstItem="eEL-Rw-J2C" firstAttribute="centerX" secondItem="GjW-JJ-Bs8" secondAttribute="centerX" id="LiN-Pn-u53"/>
+                <constraint firstAttribute="bottom" secondItem="Fg4-vc-GmG" secondAttribute="bottom" id="NE9-yQ-emK"/>
+                <constraint firstAttribute="trailing" secondItem="Fg4-vc-GmG" secondAttribute="trailing" id="wCn-5Z-FBZ"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="324" y="208"/>
+            <point key="canvasLocation" x="365" y="191"/>
         </view>
     </objects>
 </document>
